@@ -14,6 +14,6 @@ for f in fileList:
     file_creation = time.gmtime(os.path.getctime(path + f))
 
     try:
-        os.rename(path + f, path + "Mem_" + time.strftime('%Y-%m-%d', file_creation) + "{}".format(extension) )
+        os.rename(path + f, path + "meme_" + time.strftime('%Y-%m-%d', file_creation) + "{}".format(extension) )
     except:
-        os.rename(path + f, path + "Mem_" + time.strftime('%Y-%m-%d', file_creation)+ "({})".format(round(random.random(), 5)) + "{}".format(extension) )
+        os.rename(path + f, path + "meme_" + time.strftime('%Y-%m-%d', file_creation)+ "({})".format(round(random.random(), 5)) + "{}".format(extension) )
